@@ -5,9 +5,8 @@ const _= require('lodash');
 const yargs = require('yargs');
 
 const notes = require('./notes');
-
-var command = process.argv[2];
 const argv = yargs.argv;
+var command = argv._[0];
 
 switch (command){
     case 'add':
