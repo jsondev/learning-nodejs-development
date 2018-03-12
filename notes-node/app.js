@@ -17,10 +17,10 @@ switch (command){
     notes.getAll();
     break;
     case 'read':
-    notes.read(title);
+    notes.getNote(argv.title);
     break;
     case 'remove':
-    notes.remove(title);
+    notes.removeNote(argv.title);
     break;
     default:
     console.log("Command not recognized");

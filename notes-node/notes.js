@@ -6,8 +6,12 @@ var addNote = (title, body) => {
 var getAll = () => {
     console.log('Getting all notes');
 }
+var getNote = (title) => {
+ console.log('Getting note:' , title);
+}
 
 module.exports = {
  addNote,
- getAll
+ getAll,
+ getNote
 }
