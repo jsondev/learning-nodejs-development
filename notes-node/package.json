@@ -9,6 +9,7 @@
   "author": "James Anderson",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.3.2",
     "lodash": "^4.17.5",
     "yargs": "^11.0.0"
   }

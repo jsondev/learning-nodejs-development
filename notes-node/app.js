@@ -1,3 +1,5 @@
+const chalk = require('chalk');
+
 console.log('Starting app');
 
 const fs = require('fs');
