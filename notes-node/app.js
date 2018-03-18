@@ -1,7 +1,5 @@
 const chalk = require('chalk');
 
-console.log('Starting app');
-
 const fs = require('fs');
 const _ = require('lodash');
 const yargs = require('yargs');
@@ -23,7 +21,9 @@ switch (command) {
         }
         break;
     case 'list':
-        notes.getAll();
+        var allNotes = notes.getAll();
+        console.log(`Printing ${allNotes.length} note(s).`);
+        allNotes.forEach((note) => notes.logNote(note));
         break;
     case 'read':
         notes.getNote(argv.title);
